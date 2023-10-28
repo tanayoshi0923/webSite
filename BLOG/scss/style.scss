@@ -1,8 +1,81 @@
 @charset 'utf-8';
 
-@use 'color';
+/* component */
+@use 'component/anchor.scss';
 
+/* Common */
 body {
-  margin: 0;
-  color: color.$font-color;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* header */
+.header {
+  margin-top: 20px;
+
+  &__logo {
+    padding-left: 214px;
+  }
+
+  &__nav {
+    height: 41px;
+    margin-top: 20px;
+    background-color: #333333;
+
+    &-list {
+      height: 100%;
+      display: flex;
+      padding-left: 214px;
+    }
+
+    &-listItem {
+      height: 100%;
+      color: #FFFFFF;
+
+      &:nth-child(n+2) {
+        margin-left: 60px;
+      }
+
+      & > a {
+        display: block;
+        height: 100%;
+        line-height: 41px;
+      }
+    }
+  }
+}
+
+/* main */
+.main {
+  margin-top: 40px;
+  padding: 0 214px;
+}
+
+/* pickUp */
+.pickUp {
+  &__list {
+    width: 100%;
+    display: flex;
+
+    &-item {
+      width: calc((100% - (24px * 2)) / 3);
+      &:nth-child(n + 2) {
+        margin-left: 24px;
+      }
+
+      &-img {
+        & > img {
+          width: 100%;
+        }
+      }
+
+      &-info {
+        margin-top: 13px;
+
+        &-link {
+          margin-top: 21px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

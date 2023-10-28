@@ -1,6 +1,71 @@
+.anchor__toReadMore {
+  font-size: 14px;
+  color: #333333;
+  text-decoration: underline;
+}
+
+/* component */
+/* Common */
 body {
-  margin: 0;
-  color: #444;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* header */
+.header {
+  margin-top: 20px;
+}
+.header__logo {
+  padding-left: 214px;
+}
+.header__nav {
+  height: 41px;
+  margin-top: 20px;
+  background-color: #333333;
+}
+.header__nav-list {
+  height: 100%;
+  display: flex;
+  padding-left: 214px;
+}
+.header__nav-listItem {
+  height: 100%;
+  color: #FFFFFF;
+}
+.header__nav-listItem:nth-child(n+2) {
+  margin-left: 60px;
+}
+.header__nav-listItem > a {
+  display: block;
+  height: 100%;
+  line-height: 41px;
+}
+
+/* main */
+.main {
+  margin-top: 40px;
+  padding: 0 214px;
+}
+
+/* pickUp */
+.pickUp__list {
+  width: 100%;
+  display: flex;
+}
+.pickUp__list-item {
+  width: calc((100% - (24px * 2)) / 3);
+}
+.pickUp__list-item:nth-child(n+2) {
+  margin-left: 24px;
+}
+.pickUp__list-item-img > img {
+  width: 100%;
+}
+.pickUp__list-item-info {
+  margin-top: 13px;
+}
+.pickUp__list-item-info-link {
+  margin-top: 21px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
